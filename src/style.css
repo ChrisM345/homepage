@@ -1,16 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .cat-profile {
-  width: 300px;
-  height: auto;
+  width: 400px;
+  height: 400px;
+}
+
+.header-container {
+  background: linear-gradient(165deg, lightblue, white);
+  display: flex;
+  justify-content: center;
 }
 
 header {
   border: black solid;
   display: flex;
-  justify-content: center;
-  background: linear-gradient(165deg, lightblue, white);
+  width: 1000px;
 }
 
-.header-picture {
+.h1-about-me {
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 .header-about-me {
@@ -18,48 +30,120 @@ header {
   width: 600px;
   margin-top: 25px;
   margin-bottom: 25px;
-  padding-left: 15px;
+  padding-left: 25px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section {
   display: flex;
   flex-direction: column;
   border: purple solid;
-  align-items: center;
   padding-bottom: 50px;
+  width: 1000px;
+  margin-top: 75px;
 }
 
 .work-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  grid-template-columns: repeat(3, 325px);
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: stretch;
   gap: 25px;
-  border: green solid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
 }
 
 .project-image {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 .project {
   border: blue solid;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 400px;
+  /* align-items: stretch; */
+  max-width: 300px;
 }
 
-footer {
-  background-color: lightblue;
+.project-text {
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+.project-text p {
+  padding-top: 15px;
+}
+
+.footer-container {
   display: flex;
-  border: black solid;
-  justify-content: center;
+  flex-direction: column;
+  background-color: lightblue;
+  align-items: center;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.footer-contact h1 {
+  padding-top: 25px;
+}
+
+.social-links img {
+  height: 50px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
 }
 
 .cat-laptop {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+svg {
+  height: 50px;
+}
+
+.links img {
+  height: 50px;
+}
+
+footer img {
+  height: 25px;
+}
+
+.footer-para {
+  padding-top: 25px;
+}
+
+.phone-number {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.email {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 25px;
 }
